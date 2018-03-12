@@ -11,7 +11,7 @@ let Yelp = {
         return response.json();
     }).then(function(jsonResponse){
         if(jsonResponse.businesses){
-           return jsonResponses.businesses.map(
+           return jsonResponse.businesses.map(
                 function(business){
                     id: business.id,
                     imageSrc: business.image_url,
